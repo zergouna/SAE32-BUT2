@@ -46,9 +46,9 @@ public class Sae32But2Application {
 				donnees.add(lineDeDonnees);
 			}
 		} catch (FileNotFoundException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("le fichier est introuvable", e);
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("erreurs test" , e);
 		}
 		return donnees;
 
